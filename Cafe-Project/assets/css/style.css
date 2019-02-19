@@ -1,0 +1,363 @@
+@font-face{
+    font-family: logo_font;
+    src: url(/assets/fonts/Baumans/Baumans-Regular.ttf);
+}
+body{
+    overflow-x: hidden;
+}
+#logo{
+    border:solid 2px grey;
+    width: 10%;
+    /* font-size: calc(35px +(80 - 35) * ((100vw - 200px) / (1600 - 300))); */
+  
+  
+    font-size:1.5em;
+    color: white; 
+    margin-top: 30%;
+}
+
+.menu{
+    z-index: 1;
+    position: absolute;
+    width: 100vw;
+    /* float: right; */
+    /* border:solid 2px grey; */
+}
+
+#ul-menu{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+}
+.menu ul{
+    z-index: 1;   
+    display: none;
+    margin:0 -2%;
+    /* border:solid 1px grey; */
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    text-align: center;
+
+}
+
+li{
+    /* z-index: 3; */
+    padding-top: 6%;
+    font-size: 2.5em;       
+    border:solid 1px grey;
+    list-style: none;
+    background-color: rgba(98, 240, 240, 0.199);
+}
+
+
+li a {
+    margin:0;
+    text-decoration: none;
+    color: white;
+}
+
+.menu span{
+    display: block;
+    margin-left:95%;
+    width: 50px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 8px;;
+    /* padding:2px; */
+    }
+
+.menu div:hover +  ul{
+    display: block;
+}
+
+.home-cont{
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-image: url(/assets/img/florencia-viadana-717233-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home-txt{
+    width: 40%;
+    margin-left: 15%;
+    margin-top: 15%;
+    color: rgb(248, 245, 245);
+}
+
+.home-txt p{
+ /* border:solid 2px white; */
+    font-size: 4em;
+}
+.home-txt h1{
+    /* border:solid 2px white; */
+       font-size: 7em;
+   }
+   
+    /* About us Block */
+.txt-about{
+    padding: 3%;
+}
+
+/* Service Container*/
+.grid-cont-about{
+    background-color:rgb(145, 240, 136);
+    margin-top: 2%;
+    /* border: solid 2px grey; */
+    width: 100vw;
+    height: 90vh;;
+    display:grid;
+    grid-template :repeat(4,1fr) /repeat(5,1fr);
+    grid-gap:0px 20px;
+}
+
+    .about{
+        grid-row:1/span 4 ;
+        grid-column: 1/span 2;
+        /* background-color:rgb(230, 75, 14); */
+        background-image: url(/assets/img/toa-heftiba-106427-unsplash.jpg);
+        background-size:cover;
+        object-fit: cover;
+        background-repeat: no-repeat;
+
+    }
+    .txt-about{
+        grid-row: 2/span 2;
+        grid-column: 4/span 1;
+        background-color:rgba(206, 205, 202, 0.507);
+
+    }
+
+            /* Serv{ice Block */
+#txt-service{
+    margin: 3%;
+}
+
+.grid-cont-service{
+    /* background-color:rgb(13, 27, 219); */
+    margin-top: 2%;
+    /* border: solid 2px grey; */
+    margin-left:4vw;
+    width: 90vw;
+    height: 90vh;;
+    display:grid;
+    grid-template :repeat(8,1fr) /repeat(8,1fr);
+    grid-gap:0px 40px;
+    }
+
+    .item1{
+        grid-row:1/span 3;
+        grid-column: 2/span 3;
+        /* background-color:rgb(230, 75, 14); */
+        background-image: url(/assets/img/toa-heftiba-106427-unsplash.jpg);
+        background-size:cover;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }
+
+    .item2{
+        grid-row:1/span 3;
+        grid-column: 5/span 3;
+        /* background-color:rgb(230, 75, 14); */
+        background-image: url(/assets/img/toa-heftiba-106427-unsplash.jpg);
+        background-size:cover;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }
+
+    .item3{
+        grid-row:5/span 3;
+        grid-column: 2/span 3;
+        /* background-color:rgb(24, 16, 13); */
+        background-image: url(/assets/img/toa-heftiba-106427-unsplash.jpg);
+        background-size:cover;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }
+
+    .item4{
+        grid-row:5/span 3;
+        grid-column: 5/span 3;
+        /* background-color:rgb(230, 75, 14); */
+        background-image: url(/assets/img/toa-heftiba-106427-unsplash.jpg);
+        background-size:cover;
+        object-fit: cover;
+        background-repeat: no-repeat;
+}
+
+
+                /* Contact Form */
+
+.contact{
+    border: solid 2px black;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.192);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 3%;
+}
+
+#name{
+    font-size: 1.5em;
+    margin-bottom: 3%;
+    width: 25%;
+    border-radius:10px;
+    background-color: rgba(16, 162, 172, 0.438);
+
+}
+
+#email{    
+    font-size: 1.5em;
+    margin-bottom: 3%;
+    width: 25%;
+    border-radius:10px;
+    background-color: rgba(16, 162, 172, 0.438);
+}
+
+#message{    
+    font-size: 1.5em;
+
+    /* margin-top: 1%; */
+    width: 25%;
+    height: 150px;
+    border-radius:10px;
+    background-color: rgba(16, 162, 172, 0.438);
+}
+
+#send-btn{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-color: rgb(16, 161, 172);
+    text-decoration: none;
+    height: 40px;
+    width: 8%;
+    border-radius:15px;
+    color:white;
+    text-align: center;
+    padding: 8px;
+}
+
+#name::placeholder{opacity: 0.5;}
+#email::placeholder{opacity: 0.5;}
+#txt-message::placeholder{opacity: 0.5;}
+
+/* FOOTER */
+footer{
+    background-color: rgb(16, 161, 172);
+    height: 180px;
+    text-align: center;
+
+}
+
+footer h3{
+    color:white;
+    padding:1%;
+}
+
+
+/* Media Setting for Smartphone*/
+
+@media screen and (max-width: 767px) {
+    .menu{
+        width: 100vw;
+        border:solid 2px grey;
+        display: block;
+       
+    }
+    #logo{
+        border:solid 2px grey;
+        width: 100%;
+        margin-left: 20%;
+        margin-bottom: 35%;
+        font-size: 2em;
+    }
+
+    .menu span{
+        margin-left:45%;
+    }
+
+
+    /*Home Text Settings*/
+
+    .home-txt{
+        border:solid 2px grey;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 45%;
+        color: rgb(248, 245, 245);
+    }
+
+    .home-txt h1{
+        /* border:solid 2px white; */
+        font-size: 4em;
+    }
+    .home-txt p{
+    /* border:solid 2px white; */
+        font-size: 2em;
+        }
+
+    
+    /*Services Settings*/
+    .grid-cont-service{
+        /* background-color:rgb(13, 27, 219); */
+        margin-top: 2%;
+        margin-bottom: 2%;
+        /* border: solid 2px grey; */
+        display:grid;
+        grid-template :repeat(8,1fr);
+        grid-gap:2%;
+        }
+    .item1{
+        grid-row:1/span 2;
+        grid-column: 1/span 8;
+        /* background-color:rgb(230, 75, 14); */
+        background-image: url(/assets/img/toa-heftiba-106427-unsplash.jpg);
+        background-size:cover;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }
+
+    .item2{
+        grid-row:3/span 2;
+        grid-column: 1/span 8;
+        /* background-color:rgb(230, 75, 14); */
+        background-image: url(/assets/img/toa-heftiba-106427-unsplash.jpg);
+        background-size:cover;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }
+
+    .item3{
+        grid-row:5/span 2;
+        grid-column: 1/span 8;
+        /* background-color:rgb(24, 16, 13); */
+        background-image: url(/assets/img/toa-heftiba-106427-unsplash.jpg);
+        background-size:cover;
+        object-fit: cover;
+        background-repeat: no-repeat;
+    }
+
+    .item4{
+        grid-row:7/span 2;
+        grid-column: 1/span 8;
+        /* background-color:rgb(230, 75, 14); */
+        background-image: url(/assets/img/toa-heftiba-106427-unsplash.jpg);
+        background-size:cover;
+        object-fit: cover;
+        background-repeat: no-repeat;
+}
+    #name,#email,#message,#send-btn{
+        width: 100%;
+    }
+
+
+  }
+
+

@@ -1,0 +1,9 @@
+TODO
+
+1. The <Header> 100px height , take the full width of the page and backgroundcolor light gray;
+
+2. The <Main> should take 3/4 of the page;
+
+3. The <Aside> have to be 30% of the page;
+
+4. The <Footer> should have a dark grey as background color, full width     
